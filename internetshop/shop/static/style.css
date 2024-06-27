@@ -29,7 +29,8 @@ img {
     display: flex;
     align-items: center;
     padding-bottom: 10px;
-    justify-content: center;
+    justify-content: start;
+    margin-left: 350px;
 }
 
 a {
