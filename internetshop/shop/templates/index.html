@@ -3,31 +3,49 @@
 
 <div class="heading">
     <div class="logo">
-        <h1 class="logoText">GConpony</h1>
+        <h1>GСompany</h1>
     </div>
 
     <div class="navigation">
         <a href="/">Главная</a>
         <a href="/products">Товары</a>
-        <a href="/discounts">Акции</a>
+        <a href="/discounts">Услуги</a>
     </div>
 </div>
 
 
 <div class="productList">
 
-    {% for product in products %}
 <div class="product">
-    <img class="productPreview" src="{{ product.image_url }}">
+    <img src="https://cdn-edge.kwork.ru/pics/t5/12/9733560-1611236141.webp">
     <div>
-        <h2>{{ product.name }}</h2>
-        <p>{{ product.description }}</p>
+        <h2>Заказ логотипа</h2>
+        <p>Отрисую логотип, по Вашему наброску, простому рисунку от руки или из интернета.
+
+По окончании работы вам будут предоставлены файлы в PNG с прозрачным фоном, с разрешением по вашему запросу и файлы исходники PSD и AI.
+
+    От вас потребуются наброски, рисунки или картинки логотипа из интернета, который необходимо отрисовать в высоком качестве. Я не собираю логотип из отдельных картинок. Желательно точное описание деталей и цветов.
+        </p>
     </div>
     <div class="priceSection">
-        <h3>{{ product.price }} ₽</h3>
+        <h3>5000 ₽</h3>
         <button>Купить</button>
     </div>
 </div>
-    {% endfor %}
 
+
+<div class="product">
+    <img src="data:image/png;base64,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">
+    <div>
+        <h2>Прокачка аккаунта</h2>
+        <p>Игры увлекают и требуют много времени.
+            Но не все игроки готовы отдавать десятки часов в неделю для того чтобы иметь возможность опробовать высокоуровневую технику или пробиться к вершинам рейтингов. Такие вещи в реальной жизни как семья или ответственная работа могут ограничивать время которое вы можете провести в игре. Поэтому, вам может потребоваться помощь профессионалов если вы хотите опробовать все возможности игры, сражаться с самыми серьезными противниками, а не топтаться месяцами внизу рейтинга или играя на низкоуровневой технике.
+            </p>
+    </div>
+    <div class="priceSection">
+        <h3>2000 - 5000₽</h3>
+        <button>Купить</button>
+    </div>
+
+</div>
 </div>
